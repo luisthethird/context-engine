@@ -1,0 +1,28 @@
+{
+  "_schema": "context-engine-version",
+  "_schema_version": "1",
+  "_description": "Semantic version manifest for the public context-engine (L1-L2 stack). Tag convention: commits that bump composite_version get tagged context-engine-vX.Y.Z.",
+  "composite_version": "0.1.0",
+  "updated": "2026-08-27",
+  "layers": {
+    "L1": {
+      "name": "file-metadata-index",
+      "version": "0.1.0",
+      "script": "generate_index.py",
+      "description": "Tag-routable file metadata index over a multi-repo vault. Produces monolithic JSON + per-repo slices + manifest."
+    },
+    "L2": {
+      "name": "manifest-injection",
+      "version": "0.1.0",
+      "script": "examples/vault/hooks/inject_manifest.py",
+      "description": "UserPromptSubmit hook that injects the routing manifest before every Claude Code prompt."
+    }
+  },
+  "version_history": [
+    {
+      "version": "0.1.0",
+      "date": "2026-08-27",
+      "summary": "Initial public release. L1 indexer (generate_index.py) + L2 manifest-injection hook. Three-repo example workspace with worked routing traces and tmux automation guide."
+    }
+  ]
+}

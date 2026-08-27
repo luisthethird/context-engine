@@ -1,0 +1,4 @@
+{
+  "tags": ["infra", "infrastructure", "terraform", "kubernetes"],
+  "summary": "Infrastructure as code: Terraform modules and Kubernetes manifests"
+}

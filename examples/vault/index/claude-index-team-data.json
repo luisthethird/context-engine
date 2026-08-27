@@ -1,0 +1,107 @@
+{
+  "meta": {
+    "repo": "team-data",
+    "split_version": "1",
+    "usage": "Per-repo slice. Load after manifest lookup."
+  },
+  "repo": {
+    "name": "team-data",
+    "path": "team-data",
+    "type": "repo",
+    "tags": [
+      "analytics",
+      "config",
+      "data",
+      "database",
+      "index",
+      "reports",
+      "schemas"
+    ],
+    "summary": "Database schemas and analytics reports",
+    "children": [
+      {
+        "name": "reports",
+        "path": "team-data/reports",
+        "type": "dir",
+        "tags": [
+          "analytics",
+          "data",
+          "reports"
+        ],
+        "summary": "",
+        "children": [
+          {
+            "name": "q1-summary.md",
+            "path": "team-data/reports/q1-summary.md",
+            "type": "file",
+            "tags": [
+              "analytics",
+              "data",
+              "reports"
+            ],
+            "summary": "Q1 platform usage summary"
+          }
+        ]
+      },
+      {
+        "name": "schemas",
+        "path": "team-data/schemas",
+        "type": "dir",
+        "tags": [
+          "data",
+          "database",
+          "schemas"
+        ],
+        "summary": "",
+        "children": [
+          {
+            "name": "users.sql",
+            "path": "team-data/schemas/users.sql",
+            "type": "file",
+            "tags": [
+              "data",
+              "database",
+              "schemas"
+            ],
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "path": "team-data/README.md",
+        "type": "file",
+        "tags": [
+          "data",
+          "database",
+          "reports",
+          "schemas"
+        ],
+        "summary": "Database schemas and analytics reports"
+      },
+      {
+        "name": "index.md",
+        "path": "team-data/index.md",
+        "type": "file",
+        "tags": [
+          "analytics",
+          "data",
+          "database",
+          "index",
+          "reports",
+          "schemas"
+        ],
+        "summary": "Navigation index for team-data repo"
+      },
+      {
+        "name": "_meta.json",
+        "path": "team-data/_meta.json",
+        "type": "file",
+        "tags": [
+          "config"
+        ],
+        "summary": ""
+      }
+    ]
+  }
+}

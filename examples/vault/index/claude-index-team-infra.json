@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "repo": "team-infra",
+    "split_version": "1",
+    "usage": "Per-repo slice. Load after manifest lookup."
+  },
+  "repo": {
+    "name": "team-infra",
+    "path": "team-infra",
+    "type": "repo",
+    "tags": [
+      "config",
+      "containers",
+      "deployment",
+      "devops",
+      "iac",
+      "index",
+      "infra",
+      "infrastructure",
+      "k8s",
+      "kubernetes",
+      "terraform"
+    ],
+    "summary": "Infrastructure as code: Terraform modules and Kubernetes manifests",
+    "children": [
+      {
+        "name": "kubernetes",
+        "path": "team-infra/kubernetes",
+        "type": "dir",
+        "tags": [
+          "config",
+          "containers",
+          "deployment",
+          "devops",
+          "infra",
+          "infrastructure",
+          "k8s",
+          "kubernetes"
+        ],
+        "summary": "",
+        "children": [
+          {
+            "name": "deployment.yaml",
+            "path": "team-infra/kubernetes/deployment.yaml",
+            "type": "file",
+            "tags": [
+              "config",
+              "containers",
+              "deployment",
+              "devops",
+              "infra",
+              "infrastructure",
+              "k8s",
+              "kubernetes"
+            ],
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "name": "terraform",
+        "path": "team-infra/terraform",
+        "type": "dir",
+        "tags": [
+          "iac",
+          "infra",
+          "infrastructure",
+          "terraform"
+        ],
+        "summary": "",
+        "children": [
+          {
+            "name": "main.tf",
+            "path": "team-infra/terraform/main.tf",
+            "type": "file",
+            "tags": [
+              "iac",
+              "infra",
+              "infrastructure",
+              "terraform"
+            ],
+            "summary": ""
+          }
+        ]
+      },
+      {
+        "name": "README.md",
+        "path": "team-infra/README.md",
+        "type": "file",
+        "tags": [
+          "infra",
+          "infrastructure",
+          "kubernetes",
+          "terraform"
+        ],
+        "summary": "Infrastructure as code \u2014 Terraform and Kubernetes configs"
+      },
+      {
+        "name": "index.md",
+        "path": "team-infra/index.md",
+        "type": "file",
+        "tags": [
+          "index",
+          "infra",
+          "infrastructure",
+          "kubernetes",
+          "terraform"
+        ],
+        "summary": "Navigation index for team-infra repo"
+      },
+      {
+        "name": "_meta.json",
+        "path": "team-infra/_meta.json",
+        "type": "file",
+        "tags": [
+          "config",
+          "infra",
+          "infrastructure"
+        ],
+        "summary": ""
+      }
+    ]
+  }
+}

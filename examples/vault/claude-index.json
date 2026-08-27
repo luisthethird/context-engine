@@ -1,0 +1,371 @@
+{
+  "repos": [
+    {
+      "name": "team-data",
+      "path": "team-data",
+      "type": "repo",
+      "tags": [
+        "analytics",
+        "config",
+        "data",
+        "database",
+        "index",
+        "reports",
+        "schemas"
+      ],
+      "summary": "Database schemas and analytics reports",
+      "children": [
+        {
+          "name": "reports",
+          "path": "team-data/reports",
+          "type": "dir",
+          "tags": [
+            "analytics",
+            "data",
+            "reports"
+          ],
+          "summary": "",
+          "children": [
+            {
+              "name": "q1-summary.md",
+              "path": "team-data/reports/q1-summary.md",
+              "type": "file",
+              "tags": [
+                "analytics",
+                "data",
+                "reports"
+              ],
+              "summary": "Q1 platform usage summary"
+            }
+          ]
+        },
+        {
+          "name": "schemas",
+          "path": "team-data/schemas",
+          "type": "dir",
+          "tags": [
+            "data",
+            "database",
+            "schemas"
+          ],
+          "summary": "",
+          "children": [
+            {
+              "name": "users.sql",
+              "path": "team-data/schemas/users.sql",
+              "type": "file",
+              "tags": [
+                "data",
+                "database",
+                "schemas"
+              ],
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "team-data/README.md",
+          "type": "file",
+          "tags": [
+            "data",
+            "database",
+            "reports",
+            "schemas"
+          ],
+          "summary": "Database schemas and analytics reports"
+        },
+        {
+          "name": "index.md",
+          "path": "team-data/index.md",
+          "type": "file",
+          "tags": [
+            "analytics",
+            "data",
+            "database",
+            "index",
+            "reports",
+            "schemas"
+          ],
+          "summary": "Navigation index for team-data repo"
+        },
+        {
+          "name": "_meta.json",
+          "path": "team-data/_meta.json",
+          "type": "file",
+          "tags": [
+            "config"
+          ],
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "name": "team-docs",
+      "path": "team-docs",
+      "type": "repo",
+      "tags": [
+        "architecture",
+        "automation",
+        "cli",
+        "config",
+        "docs",
+        "documentation",
+        "index",
+        "onboarding",
+        "setup",
+        "system-design",
+        "testing",
+        "tmux",
+        "tools"
+      ],
+      "summary": "Team documentation: onboarding, architecture, runbooks",
+      "children": [
+        {
+          "name": "docs",
+          "path": "team-docs/docs",
+          "type": "dir",
+          "tags": [
+            "architecture",
+            "docs",
+            "documentation",
+            "onboarding",
+            "setup",
+            "system-design"
+          ],
+          "summary": "",
+          "children": [
+            {
+              "name": "architecture.md",
+              "path": "team-docs/docs/architecture.md",
+              "type": "file",
+              "tags": [
+                "architecture",
+                "docs",
+                "system-design"
+              ],
+              "summary": "High-level system architecture overview"
+            },
+            {
+              "name": "onboarding.md",
+              "path": "team-docs/docs/onboarding.md",
+              "type": "file",
+              "tags": [
+                "docs",
+                "onboarding",
+                "setup"
+              ],
+              "summary": "New engineer environment setup guide"
+            }
+          ]
+        },
+        {
+          "name": "tools",
+          "path": "team-docs/tools",
+          "type": "dir",
+          "tags": [
+            "automation",
+            "cli",
+            "config",
+            "docs",
+            "documentation",
+            "setup",
+            "testing",
+            "tmux",
+            "tools"
+          ],
+          "summary": "Tool guides for interacting with Claude Code and automating workspace testing",
+          "children": [
+            {
+              "name": "_meta.json",
+              "path": "team-docs/tools/_meta.json",
+              "type": "file",
+              "tags": [
+                "config",
+                "docs",
+                "documentation"
+              ],
+              "summary": ""
+            },
+            {
+              "name": "claude-code-cli.md",
+              "path": "team-docs/tools/claude-code-cli.md",
+              "type": "file",
+              "tags": [
+                "automation",
+                "cli",
+                "setup",
+                "testing",
+                "tools"
+              ],
+              "summary": "Running and scripting Claude Code CLI against this workspace \u2014 interactive, print mode, and isolation"
+            },
+            {
+              "name": "tmux.md",
+              "path": "team-docs/tools/tmux.md",
+              "type": "file",
+              "tags": [
+                "automation",
+                "cli",
+                "testing",
+                "tmux",
+                "tools"
+              ],
+              "summary": "Driving Claude Code's interactive TUI from tmux for scripted testing and automation"
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "team-docs/README.md",
+          "type": "file",
+          "tags": [
+            "docs",
+            "onboarding"
+          ],
+          "summary": "Team documentation root \u2014 onboarding and architecture references"
+        },
+        {
+          "name": "index.md",
+          "path": "team-docs/index.md",
+          "type": "file",
+          "tags": [
+            "architecture",
+            "docs",
+            "index",
+            "onboarding"
+          ],
+          "summary": "Navigation index for team-docs repo"
+        },
+        {
+          "name": "_meta.json",
+          "path": "team-docs/_meta.json",
+          "type": "file",
+          "tags": [
+            "config",
+            "docs",
+            "documentation"
+          ],
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "name": "team-infra",
+      "path": "team-infra",
+      "type": "repo",
+      "tags": [
+        "config",
+        "containers",
+        "deployment",
+        "devops",
+        "iac",
+        "index",
+        "infra",
+        "infrastructure",
+        "k8s",
+        "kubernetes",
+        "terraform"
+      ],
+      "summary": "Infrastructure as code: Terraform modules and Kubernetes manifests",
+      "children": [
+        {
+          "name": "kubernetes",
+          "path": "team-infra/kubernetes",
+          "type": "dir",
+          "tags": [
+            "config",
+            "containers",
+            "deployment",
+            "devops",
+            "infra",
+            "infrastructure",
+            "k8s",
+            "kubernetes"
+          ],
+          "summary": "",
+          "children": [
+            {
+              "name": "deployment.yaml",
+              "path": "team-infra/kubernetes/deployment.yaml",
+              "type": "file",
+              "tags": [
+                "config",
+                "containers",
+                "deployment",
+                "devops",
+                "infra",
+                "infrastructure",
+                "k8s",
+                "kubernetes"
+              ],
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "name": "terraform",
+          "path": "team-infra/terraform",
+          "type": "dir",
+          "tags": [
+            "iac",
+            "infra",
+            "infrastructure",
+            "terraform"
+          ],
+          "summary": "",
+          "children": [
+            {
+              "name": "main.tf",
+              "path": "team-infra/terraform/main.tf",
+              "type": "file",
+              "tags": [
+                "iac",
+                "infra",
+                "infrastructure",
+                "terraform"
+              ],
+              "summary": ""
+            }
+          ]
+        },
+        {
+          "name": "README.md",
+          "path": "team-infra/README.md",
+          "type": "file",
+          "tags": [
+            "infra",
+            "infrastructure",
+            "kubernetes",
+            "terraform"
+          ],
+          "summary": "Infrastructure as code \u2014 Terraform and Kubernetes configs"
+        },
+        {
+          "name": "index.md",
+          "path": "team-infra/index.md",
+          "type": "file",
+          "tags": [
+            "index",
+            "infra",
+            "infrastructure",
+            "kubernetes",
+            "terraform"
+          ],
+          "summary": "Navigation index for team-infra repo"
+        },
+        {
+          "name": "_meta.json",
+          "path": "team-infra/_meta.json",
+          "type": "file",
+          "tags": [
+            "config",
+            "infra",
+            "infrastructure"
+          ],
+          "summary": ""
+        }
+      ]
+    }
+  ]
+}

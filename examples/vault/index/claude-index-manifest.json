@@ -1,0 +1,96 @@
+{
+  "_schema_version": "1",
+  "_usage": "Load this first. Look up tags in tag_to_repos, read only the indicated slice files.",
+  "tag_to_repos": {
+    "analytics": [
+      "claude-index-team-data.json"
+    ],
+    "architecture": [
+      "claude-index-team-docs.json"
+    ],
+    "automation": [
+      "claude-index-team-docs.json"
+    ],
+    "cli": [
+      "claude-index-team-docs.json"
+    ],
+    "config": [
+      "claude-index-team-data.json",
+      "claude-index-team-docs.json",
+      "claude-index-team-infra.json"
+    ],
+    "containers": [
+      "claude-index-team-infra.json"
+    ],
+    "data": [
+      "claude-index-team-data.json"
+    ],
+    "database": [
+      "claude-index-team-data.json"
+    ],
+    "deployment": [
+      "claude-index-team-infra.json"
+    ],
+    "devops": [
+      "claude-index-team-infra.json"
+    ],
+    "docs": [
+      "claude-index-team-docs.json"
+    ],
+    "documentation": [
+      "claude-index-team-docs.json"
+    ],
+    "iac": [
+      "claude-index-team-infra.json"
+    ],
+    "index": [
+      "claude-index-team-data.json",
+      "claude-index-team-docs.json",
+      "claude-index-team-infra.json"
+    ],
+    "infra": [
+      "claude-index-team-infra.json"
+    ],
+    "infrastructure": [
+      "claude-index-team-infra.json"
+    ],
+    "k8s": [
+      "claude-index-team-infra.json"
+    ],
+    "kubernetes": [
+      "claude-index-team-infra.json"
+    ],
+    "onboarding": [
+      "claude-index-team-docs.json"
+    ],
+    "reports": [
+      "claude-index-team-data.json"
+    ],
+    "schemas": [
+      "claude-index-team-data.json"
+    ],
+    "setup": [
+      "claude-index-team-docs.json"
+    ],
+    "system-design": [
+      "claude-index-team-docs.json"
+    ],
+    "terraform": [
+      "claude-index-team-infra.json"
+    ],
+    "testing": [
+      "claude-index-team-docs.json"
+    ],
+    "tmux": [
+      "claude-index-team-docs.json"
+    ],
+    "tools": [
+      "claude-index-team-docs.json"
+    ]
+  },
+  "repos": {
+    "team-data": "index/claude-index-team-data.json",
+    "team-docs": "index/claude-index-team-docs.json",
+    "team-infra": "index/claude-index-team-infra.json"
+  }
+}
