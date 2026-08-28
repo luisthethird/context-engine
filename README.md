@@ -76,7 +76,7 @@ into a real workspace bootstrap file.
 ## Customization
 
 `generate_index.py` has three maps to customize for your workspace. Everything
-else is invariant — do not change the node schema or manifest schema, as the
+else is invariant. Do not change the node schema or manifest schema, as the
 LLM consumption protocol depends on them.
 
 ### PATH_TAG_MAP
@@ -168,16 +168,16 @@ routing table for that repo.
 
 ### Tag Sources (priority order)
 
-1. `_meta.json` sidecar — explicit overrides, highest priority
-2. YAML frontmatter — `tags:` and `description:` fields in `.md` files
-3. Path + filename inference — `PATH_TAG_MAP` and `FILENAME_TAG_MAP`
+1. `_meta.json` sidecar: explicit overrides, highest priority
+2. YAML frontmatter: `tags:` and `description:` fields in `.md` files
+3. Path + filename inference via `PATH_TAG_MAP` and `FILENAME_TAG_MAP`
 
 ### Scope and Limits
 
 This system does **not**:
 - Index file contents (no full-text search, no semantic embeddings)
-- Replace reading files — it routes to them, not away from them
-- Stay current automatically — regenerate after structural changes
+- Replace reading files; it routes to them, not away from them
+- Stay current automatically; regenerate after structural changes
 - Handle encrypted repos
 
 It does one thing: route an LLM to the right files out of thousands
@@ -228,11 +228,11 @@ claude                   # starts a Claude Code session in this workspace
 
 **Isolation explained:** Claude Code discovers `CLAUDE.md` and `.claude/settings.json`
 by walking up from the working directory. Running from `~/context-engine/` walks up
-through `~/context-engine/` and `~/` — it never touches sibling directories or
+through `~/context-engine/` and `~/`; it never touches sibling directories or
 any other project. No context leaks in either direction.
 
 The hook in `.claude/settings.json` injects the example manifest on every prompt.
-Try asking Claude to find a file related to "kubernetes" or "onboarding" — it should
+Try asking Claude to find a file related to "kubernetes" or "onboarding"; it should
 route through the manifest without reading any files directly.
 
 See **[examples/reference.md](examples/reference.md)** for worked routing traces with
@@ -243,6 +243,10 @@ for three real queries against the example workspace.
 multi-repo directory, customize `PATH_TAG_MAP` and `FILENAME_TAG_MAP` in
 `generate_index.py`, regenerate the index, and copy `.claude/settings.json` to
 your workspace's `.git` root.
+
+## Beyond This Repository
+
+This repository publishes the foundational routing layer of a larger system. A more extensive private implementation exists and formal IP protection is in progress. The public release is intentional: the indexing and injection primitives here stand on their own, and publishing them separately keeps the boundary between open and proprietary clean. Anyone interested in the broader work is welcome to reach out directly.
 
 ## Requirements
 
