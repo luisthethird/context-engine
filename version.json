@@ -1,0 +1,28 @@
+{
+  "_schema": "context-engine-version",
+  "_schema_version": "1",
+  "_description": "Semantic version manifest for context-engine. Tag convention: commits that bump composite_version get tagged context-engine-vX.Y.Z.",
+  "composite_version": "0.1.0",
+  "updated": "2026-08-28",
+  "components": {
+    "indexer": {
+      "name": "file-metadata-index",
+      "version": "0.1.0",
+      "script": "generate_index.py",
+      "description": "Tag-routable file metadata index over a multi-repo workspace. Produces monolithic JSON + per-repo slices + manifest."
+    },
+    "hook": {
+      "name": "manifest-injection",
+      "version": "0.1.0",
+      "script": "examples/vault/hooks/inject_manifest.py",
+      "description": "UserPromptSubmit hook that injects the routing manifest before every Claude Code prompt."
+    }
+  },
+  "version_history": [
+    {
+      "version": "0.1.0",
+      "date": "2026-08-28",
+      "summary": "Initial public release. Indexer (generate_index.py) + manifest-injection hook. Three-repo example workspace with worked routing traces, pytest suite, and tmux automation guides for Claude Code, Codex CLI, and Grok CLI. Cross-CLI routing verified (Claude Code, Codex CLI, Grok CLI)."
+    }
+  ]
+}

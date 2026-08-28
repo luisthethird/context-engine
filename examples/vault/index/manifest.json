@@ -1,0 +1,100 @@
+{
+  "_schema_version": "1",
+  "_usage": "Load this first. Look up tags in tag_to_repos, read only the indicated slice files.",
+  "tag_to_repos": {
+    "analytics": [
+      "team-data.json"
+    ],
+    "architecture": [
+      "team-docs.json"
+    ],
+    "automation": [
+      "team-docs.json"
+    ],
+    "cli": [
+      "team-docs.json"
+    ],
+    "codex": [
+      "team-docs.json"
+    ],
+    "config": [
+      "team-infra.json"
+    ],
+    "containers": [
+      "team-infra.json"
+    ],
+    "data": [
+      "team-data.json"
+    ],
+    "database": [
+      "team-data.json"
+    ],
+    "deployment": [
+      "team-infra.json"
+    ],
+    "devops": [
+      "team-infra.json"
+    ],
+    "docs": [
+      "team-docs.json"
+    ],
+    "documentation": [
+      "team-docs.json"
+    ],
+    "grok": [
+      "team-docs.json"
+    ],
+    "iac": [
+      "team-infra.json"
+    ],
+    "index": [
+      "team-data.json",
+      "team-docs.json",
+      "team-infra.json"
+    ],
+    "infra": [
+      "team-infra.json"
+    ],
+    "infrastructure": [
+      "team-infra.json"
+    ],
+    "k8s": [
+      "team-infra.json"
+    ],
+    "kubernetes": [
+      "team-infra.json"
+    ],
+    "onboarding": [
+      "team-docs.json"
+    ],
+    "reports": [
+      "team-data.json"
+    ],
+    "schemas": [
+      "team-data.json"
+    ],
+    "setup": [
+      "team-docs.json"
+    ],
+    "system-design": [
+      "team-docs.json"
+    ],
+    "terraform": [
+      "team-infra.json"
+    ],
+    "testing": [
+      "team-docs.json"
+    ],
+    "tmux": [
+      "team-docs.json"
+    ],
+    "tools": [
+      "team-docs.json"
+    ]
+  },
+  "repos": {
+    "team-data": "index/team-data.json",
+    "team-docs": "index/team-docs.json",
+    "team-infra": "index/team-infra.json"
+  }
+}
